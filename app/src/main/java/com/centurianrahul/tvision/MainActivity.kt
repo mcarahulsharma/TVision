@@ -35,7 +35,7 @@ class MainActivity : Activity() {
     private val ink = Color.rgb(8, 11, 19)
     private val panel = Color.rgb(20, 25, 37)
     private val panel2 = Color.rgb(28, 35, 50)
-    private val text = Color.rgb(247, 249, 255)
+    private val primaryText = Color.rgb(247, 249, 255)
     private val secondary = Color.rgb(164, 176, 198)
     private val blue = Color.rgb(117, 170, 255)
     private lateinit var pageScroll: ScrollView
@@ -116,7 +116,7 @@ class MainActivity : Activity() {
             text = "TVISION"
             textSize = 21f
             letterSpacing = 0.22f
-            setTextColor(text)
+            setTextColor(primaryText)
             typeface = Typeface.create("sans-serif-black", Typeface.BOLD)
         })
         brand.addView(TextView(this).apply {
@@ -157,7 +157,7 @@ class MainActivity : Activity() {
         clockView = TextView(this).apply {
             textSize = 14f
             gravity = Gravity.CENTER
-            setTextColor(text)
+            setTextColor(primaryText)
             typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
             setPadding(dp(22), 0, dp(13), 0)
             minWidth = dp(88)
@@ -421,7 +421,7 @@ class MainActivity : Activity() {
         tile.addView(TextView(this).apply {
             text = app.label
             textSize = 11f
-            setTextColor(text)
+            setTextColor(primaryText)
             maxLines = 2
             ellipsize = android.text.TextUtils.TruncateAt.END
             gravity = Gravity.CENTER_VERTICAL
@@ -439,7 +439,7 @@ class MainActivity : Activity() {
         block.addView(TextView(this).apply {
             text = title
             textSize = 20f
-            setTextColor(text)
+            setTextColor(primaryText)
             typeface = Typeface.create("sans-serif-medium", Typeface.BOLD)
         })
         block.addView(TextView(this).apply {
