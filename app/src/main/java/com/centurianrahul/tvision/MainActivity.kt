@@ -138,7 +138,7 @@ class MainActivity : Activity() {
                 textSize = 13f
                 typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
                 gravity = Gravity.CENTER
-                setTextColor(if (index == 0) text else secondary)
+                setTextColor(if (index == 0) primaryText else secondary)
                 setPadding(dp(17), 0, dp(17), 0)
                 background = if (index == 0) pill(Color.rgb(43, 61, 91), blue) else focusDrawable(22)
                 isFocusable = true
